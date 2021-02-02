@@ -35,7 +35,6 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -73,9 +72,7 @@ p {
 }
 
 img {
-    width: 100vw;
-    border: 1px solid rgb(150, 150, 150);
-    
+    width: 100%;
 }
 
 
@@ -123,6 +120,106 @@ li {
     height: 5rem;
 }
 
+/* ==========================================================================
+   2. LAYOUT
+   ========================================================================== */
+.heading {
+    color: rgb(43, 159, 215);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.page__slider {
+    width: 100%;
+}
+
+div, section, footer, header {
+    border: 1px solid #ccc;
+}
+
+.column {
+    background-color:beige;
+    margin: 1rem; 
+}
+
+/*small only*/
+@media screen and (max-width:39.975em) {
+
+
+}
+
+
+/* Medium and Up*/
+@media screen and (min-width: 40em) {
+
+    .row {
+        display: grid;
+        width: 85vw;
+        max-width: 70rem;
+        margin: 0 auto;
+        
+    }
+
+    .m-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .m-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .m-col-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .m-col-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .span-full {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        
+    }
+}
+
+
+/*Medium only*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+
+}
+
+
+/* Large and Up*/
+@media screen and (min-width: 64em) {
+    .l-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .l-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .l-col-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .l-col-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .l-col-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .span-full {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        
+    }
+}
+
+
+/*Large Only*/
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+
+}
 
 
 /* ==========================================================================
