@@ -133,12 +133,9 @@ li {
     width: 100%;
 }
 
-div, section, footer, header {
-    border: 1px solid #ccc;
-}
+
 
 .column {
-    background-color:beige;
     margin: 1rem; 
 }
 
@@ -179,12 +176,19 @@ div, section, footer, header {
         grid-column-end: -1;
         
     }
+
+    .m-1-2 {
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 
 /*Medium only*/
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
+    .special-project {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
 
 }
 
@@ -258,9 +262,20 @@ div, section, footer, header {
 }
 
 /* ==========================================================================
-   4. STATES
+   4. THEME
    ========================================================================== */
-/*
+
+.page__slider {
+    background-color: rgb(230, 230, 230);
+    width: 100vw;
+}
+
+.page__footer {
+    background-color:beige;
+    
+}
+
+
 
 
 
