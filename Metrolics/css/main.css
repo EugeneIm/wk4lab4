@@ -15,7 +15,10 @@ html {
     font-size: 1em;
     line-height: 1.5;
     background: rgb(216, 216, 216);
+    font-family: 'Open Sans',Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* selections*/
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -66,12 +69,21 @@ p {
 .heading {
     color: rgb(43, 159, 215);
     text-transform: capitalize;
+    text-align: center;
 }
 
 img {
-    width: 100%;
+    width: 100vw;
     border: 1px solid rgb(150, 150, 150);
+    
 }
+
+
+h1 {
+    color: #000;
+}
+
+
 
 ul,
 li {
